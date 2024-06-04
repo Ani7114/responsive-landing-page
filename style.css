@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif; 
+}
+
+html, body {
+    height: 100%;
+    overflow: hidden;
+}
+
+.parent {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.logo {
+    padding-left: 3vw;
+    font-size: 2rem; 
+    font-weight: 700; 
+}
+
+.nav {
+    height: 70px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    border-bottom: 2px solid gray;
+    padding: 0 3vw; 
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 2vw; 
+    list-style: none;
+}
+
+.navbar li, .btn1 {
+    cursor: pointer;
+    font-size: 1.1rem; 
+    font-weight: 600; 
+}
+
+.navbar li:hover, .btn1:hover {
+    color: #FF735C; 
+}
+
+.nav i {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .nav {
+        background-color: royalblue;
+        color: white;
+        padding: 0 5vw;
+    }
+    .navbar li {
+        display: none;
+        font-weight: 800;
+    }
+    .nav i {
+        display: block;
+        font-size: 6vw;
+    }
+    .btn1 {
+        display: none;
+    }
+}
+
+.content {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    position: relative;
+    padding: 2vw; 
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left {
+    height: 100%;
+    width: 50%;
+    padding: 5vw 5vw;
+    font-weight: 800;
+    font-size: medium;
+}
+
+.left h1 {
+    font-size: 2.5rem; 
+    line-height: 1.2; 
+    font-weight: 700; 
+}
+
+.left p {
+    padding-top: 20px;
+    font-size: 1.2rem; 
+    font-weight: 400; 
+    line-height: 1.5; 
+}
+
+.right {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right img {
+    max-width: 100%;
+    max-height: 90%;
+    object-fit: cover;
+}
+
+.span {
+    color: #FF735C;
+}
+
+.btn, .btn1 {
+    height: 40px; 
+    padding: 0 20px; 
+    margin-top: 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #FF735C;
+    cursor: pointer;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600; 
+}
+
+.btn1 {
+    margin: 0; 
+}
+
+.btn:hover, .btn1:hover {
+    background-color: darkseagreen;
+}
